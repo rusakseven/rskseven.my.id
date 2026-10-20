@@ -103,13 +103,13 @@
 
   <!-- ============ 4.4 HMP ============ -->
   <h2>Kernel 4.4 HMP <span class="small">— 4.4.302 · Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/tag/v1.2-hmp-ksunext-33314-20261018">v1.2-hmp-ksunext-33314-20261018</a> · File build 18 Okt 2026 (fix KSU + src_freq) · LV: src_freq reverted ke tabel stok, cap 430 MHz (aktual ~370 MHz) · NLV: src_freq fix, 430 MHz · Aset LV diperbarui 19 Okt 2026 (revert src_freq, fix random freeze A11+)</div>
+  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/tag/v1.3-hmp-ksunext-33314-20261020">v1.3-hmp-ksunext-33314-20261020</a> · LV: sama seperti v1.2 (src_freq reverted ke tabel stok, cap 430 MHz, aktual ~370 MHz) · NLV: cap GPU diturunkan ke 266 MHz (aktual 266, tabel src_freq FIXED) · NLV diperbarui 20 Okt 2026</div>
   <div class="note">
     Varian <b>HMP</b> (scheduler lama) — pilih ini kalau EAS bermasalah di ROM-mu, atau kalau kamu lebih suka HMP.
     Sudah termasuk fix panel AUO FT8716F dan patch cmdline (androidboot.version + led.vibration).
-    <b>KSU di v1.2 di-update ke 3.4.0</b> (v1.1 sudah ada KSU 3.2.0 + SuSFS) — Manager v3.4.2, Extreme LV sudah dites di HP.
-    <b>LV: src_freq reverted ke tabel stok (buggy)</b>, cap 430 MHz (aktual ~370 MHz) — fix src_freq menyebabkan random freeze di Android 11+, tabel bug terbukti stabil (dites di HP, ROM LOS 18.1, tidak freeze sebelum/sesudah GApps).
-    <b>NLV: tetap src_freq fix, 430 MHz</b> (aman di Android 10 — Extreme NLV dites di LOS 17, tidak ada masalah).
+    <b>KSU di-update ke 3.4.0 (33314)</b> (v1.1 sudah ada KSU 3.2.0 + SuSFS) — Manager v3.4.2, Extreme LV sudah dites di HP.
+    <b>LV: src_freq reverted ke tabel stok (buggy)</b>, cap 430 MHz (aktual ~370 MHz) — fix src_freq menyebabkan random freeze di Android 11+, tabel bug terbukti stabil (dites di HP, ROM LOS 18.1, tidak freeze sebelum/sesudah GApps). LV di v1.3 sama persis seperti v1.2.
+    <b>NLV: src_freq fix, cap GPU 266 MHz</b> (aktual 266 MHz — frekuensi sejati aman di Android 10; Extreme NLV cap 430 dites di LOS 17, tidak ada masalah). v1.3 menurunkan cap NLV dari 430 ke 266 MHz.
   </div>
 
   <h3 class="sub">LV — Android 11 / 12 (GPU cap 430 MHz, aktual ~370 MHz)</h3>
@@ -117,42 +117,42 @@
   <div class="card">
     <h3>Stock LV — big 1.8 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>df4d160eeb6882d951e77ebeb6e118f1</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-Stock-HMP-LV-SUSFS-20261018-fix.zip">Download Stock LV</a>
+    <div class="md5">MD5: <code>f1ef3e5f66df9cf1e8400de1019ce5e0</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-LV-SUSFS-v1.3-20261020.zip">Download Stock LV</a>
   </div>
   <div class="card">
     <h3>OC LV — big 2.21 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>04569dab82ea8b42f443724e5b0c89eb</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-OC-HMP-LV-SUSFS-20261018-fix.zip">Download OC LV</a>
+    <div class="md5">MD5: <code>80da64acdfeb2ca86bcf9381a60212d0</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-LV-SUSFS-v1.3-20261020.zip">Download OC LV</a>
   </div>
   <div class="card">
     <h3>Extreme LV — big 2.46 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>558376b678972d5b3e9b4620424408b3</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-LV-SUSFS-20261018-fix.zip">Download Extreme LV</a>
+    <div class="md5">MD5: <code>9759340f629dee3b1973c83a0d54edea</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-LV-SUSFS-v1.3-20261020.zip">Download Extreme LV</a>
   </div>
   </div>
 
-  <h3 class="sub">NLV — Android 10 (GPU 430 MHz)</h3>
+  <h3 class="sub">NLV — Android 10 (GPU cap 266 MHz, aktual 266 MHz)</h3>
   <div class="grid">
   <div class="card">
     <h3>Stock NLV — big 1.8 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>30ba9aba3482892b5b65140a0eac1ecf</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-Stock-HMP-NLV-SUSFS-20261018-fix.zip">Download Stock NLV</a>
+    <div class="md5">MD5: <code>e9f5bc46492af0a89c73c0c065115b29</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-NLV-SUSFS-v1.3-20261020.zip">Download Stock NLV</a>
   </div>
   <div class="card">
     <h3>OC NLV — big 2.21 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>4bffb5bfdc13425ef2a4cc9ffe6a7577</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-OC-HMP-NLV-SUSFS-20261018-fix.zip">Download OC NLV</a>
+    <div class="md5">MD5: <code>53124a84d1ecf51ca2980305f2d6123b</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-NLV-SUSFS-v1.3-20261020.zip">Download OC NLV</a>
   </div>
   <div class="card">
     <h3>Extreme NLV — big 2.46 GHz</h3>
     <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>749425d52dda23e7f50f17bd1961e4b5</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.2-hmp-ksunext-33314-20261018/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-NLV-SUSFS-20261018-fix.zip">Download Extreme NLV</a>
+    <div class="md5">MD5: <code>97962f80f3ccc29d70b99db90b6e7f50</code></div>
+    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-NLV-SUSFS-v1.3-20261020.zip">Download Extreme NLV</a>
   </div>
   </div>
 
