@@ -6,44 +6,63 @@
 <title>RSKSevenProject — Download Kernel X00TD</title>
 <meta name="description" content="Hub download kernel RSKSevenProject untuk Asus Zenfone Max Pro M1 (X00TD).">
 <style>
-  :root{--bg:#0e1116;--card:#181d26;--card2:#1f2632;--line:#2a3242;--txt:#e8ecf1;--mut:#9aa7b8;--acc:#f59e0b;--acc2:#38bdf8;--ok:#34d399}
+  :root{--bg:#0b0e13;--surface:#151a22;--surface2:#1b222e;--line:#232b38;--txt:#e6ebf2;--mut:#94a3b8;--acc:#f59e0b;--acc2:#38bdf8;--ok:#34d399}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.5}
-  .wrap{max-width:860px;margin:0 auto;padding:28px 16px 48px}
-  header{text-align:center;margin-bottom:8px}
-  h1{font-size:30px;margin:6px 0 4px}
-  .sub{color:var(--mut);font-size:15px}
-  .badge{display:inline-block;background:#2a2415;color:#fbbf24;border:1px solid #5b4a1e;border-radius:999px;padding:2px 10px;font-size:12px;margin-top:8px}
-  .note{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:18px 0;font-size:14px;color:var(--mut)}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 16px 56px}
+  header{padding:40px 0 24px;text-align:center}
+  h1{font-size:38px;margin:0 0 8px;letter-spacing:-.5px}
+  h1 span{color:var(--acc)}
+  .sub{color:var(--mut);font-size:16px}
+  .badge{display:inline-block;background:#2a2415;color:#fbbf24;border:1px solid #5b4a1e;border-radius:999px;padding:4px 12px;font-size:13px;margin-top:12px}
+  .topnav{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;background:rgba(11,14,19,.94);border-bottom:1px solid var(--line);padding:12px 8px;margin:0 -16px 8px}
+  .topnav a{color:var(--mut);text-decoration:none;font-size:14px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid transparent}
+  .topnav a:hover{color:var(--txt);border-color:var(--line);background:var(--surface)}
+  .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:14px;padding:16px 18px;margin:24px 0;font-size:14px;color:var(--mut)}
   .note b{color:var(--txt)}
-  h2{font-size:20px;margin:30px 0 4px}
-  h3.sub{font-size:16px;margin:22px 0 8px;color:#c8d3e0}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  h2{font-size:22px;margin:40px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3.sub{font-size:16px;margin:24px 0 10px;color:#c8d3e0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
   .grid .card{margin:0}
-  .meta{color:var(--mut);font-size:13px;margin-bottom:12px}
+  .meta{color:var(--mut);font-size:13px;margin-bottom:14px}
   .meta a{color:var(--acc2);text-decoration:none}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:10px 0;display:flex;flex-direction:column}
-  .card h3{margin:0 0 6px;font-size:17px}
-  .tags{margin:6px 0 10px}
-  .tag{display:inline-block;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;color:var(--mut);margin:0 4px 4px 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin:12px 0;display:flex;flex-direction:column;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.45);border-color:#3a465a}
+  .card h3{margin:0 0 8px;font-size:18px}
+  .tags{margin:8px 0 12px}
+  .tag{display:inline-block;background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--mut);margin:0 4px 4px 0}
   .tag.hot{background:#1d2b22;color:var(--ok);border-color:#2f5d46}
-  .md5{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--mut);word-break:break-all;margin:8px 0}
+  .md5{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--mut);word-break:break-all;margin:10px 0}
   .md5 code{color:#c8d3e0}
-  .btn{display:inline-block;background:var(--acc);color:#1a1202;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:10px;margin-top:auto;align-self:flex-start}
-  .btn:hover{filter:brightness(1.08)}
-  .btn.ghost{background:transparent;color:var(--acc2);border:1px solid #2b4a5f;padding:8px 14px;font-weight:600}
-  footer{margin-top:36px;text-align:center;color:var(--mut);font-size:13px}
+  .btn{display:block;background:var(--acc);color:#1a1202;font-weight:700;text-decoration:none;text-align:center;padding:12px 18px;border-radius:12px;margin-top:auto;transition:transform .2s ease, filter .2s ease}
+  .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--acc2);border:1px solid #2b4a5f;padding:10px 14px;font-weight:600}
+  footer{margin-top:48px;text-align:center;color:var(--mut);font-size:13px}
   footer a{color:var(--acc2);text-decoration:none}
   .small{font-size:13px;color:var(--mut)}
+  html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .5s ease-out, transform .5s ease-out}
+  html.js .reveal.inview{opacity:1;transform:translateY(0)}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+    html.js .reveal{opacity:1;transform:none}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>RSKSevenProject</h1>
+    <h1><span>RSKSeven</span>Project</h1>
     <div class="sub">Download Kernel untuk Asus Zenfone Max Pro M1 (X00TD / ZB602KL)</div>
     <span class="badge">Maintainer: @rusakseven7</span> <a class="badge" href="https://teer.id/rusakseven" style="text-decoration:none">♥ Donasi via Teer.id</a>
   </header>
+  <nav class="topnav">
+    <a href="#rom">ROM</a>
+    <a href="#eas">Kernel 4.4</a>
+    <a href="#matrix">Kernel 4.19</a>
+    <a href="#donasi">Donasi</a>
+  </nav>
 
   <div class="note">
     <b>Cara pilih:</b> cek versi kernel &amp; Android ROM-mu dulu.
@@ -54,7 +73,7 @@
   </div>
 
   <!-- ============ ROM RevengeOS 3.2-Q ============ -->
-  <h2>ROM — RevengeOS 3.2-Q <span class="small">— Android 10 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
+  <h2 id="rom">ROM — RevengeOS 3.2-Q <span class="small">— Android 10 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/3.2-Q-20261102-release">3.2-Q-20261102-release</a> · 2 Nov 2026 · Test-keys · Varian vanilla (tanpa GApps)</div>
 
   <div class="grid">
@@ -71,7 +90,7 @@
   </div>
 
   <!-- ============ ROM 19.1 ============ -->
-  <h2>ROM — LineageOS 19.1 <span class="small">— Android 12L · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
+  <h2 id="rom191">ROM — LineageOS 19.1 <span class="small">— Android 12L · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/19.1-20261028-release">19.1-20261028-release</a> · 28 Okt 2026 · Signed release-keys (bukan test-keys)</div>
 
   <div class="grid">
@@ -87,7 +106,7 @@
   </div>
 
   <!-- ============ ROM ============ -->
-  <h2>ROM — LineageOS 18.1 <span class="small">— Android 11 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
+  <h2 id="rom181">ROM — LineageOS 18.1 <span class="small">— Android 11 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/build-26-release">build-26-release</a> · 20 Okt 2026 · Signed release-keys (bukan test-keys)</div>
 
   <div class="grid">
@@ -103,7 +122,7 @@
   </div>
 
   <!-- ============ 4.4 EAS ============ -->
-  <h2>Kernel 4.4 EAS <span class="small">— 4.4.302 · EAS + schedutil · KernelSU-Next v3.2.0 · SuSFS v2.3.0</span></h2>
+  <h2 id="eas">Kernel 4.4 EAS <span class="small">— 4.4.302 · EAS + schedutil · KernelSU-Next v3.2.0 · SuSFS v2.3.0</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/tag/v20261016-eas">v20261016-eas</a> · File build 17 Okt 2026 (fix haptic NLV) · GPU default 430 MHz (unlock 750 MHz via modul GPU Control)</div>
 
   <h3 class="sub">LV — Android 11</h3>
@@ -151,7 +170,7 @@
   </div>
 
   <!-- ============ 4.4 HMP ============ -->
-  <h2>Kernel 4.4 HMP <span class="small">— 4.4.302 · Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
+  <h2 id="hmp">Kernel 4.4 HMP <span class="small">— 4.4.302 · Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/tag/v1.3-hmp-ksunext-33314-20261020">v1.3-hmp-ksunext-33314-20261020</a> · LV: sama seperti v1.2 (src_freq reverted ke tabel stok, cap 430 MHz, aktual ~370 MHz) · NLV: cap GPU diturunkan ke 266 MHz (aktual 266, tabel src_freq FIXED) · NLV diperbarui 20 Okt 2026</div>
   <div class="note">
     Varian <b>HMP</b> (scheduler lama) — pilih ini kalau EAS bermasalah di ROM-mu, atau kalau kamu lebih suka HMP.
@@ -206,7 +225,7 @@
   </div>
 
   <!-- ============ 4.19 MATRIX ============ -->
-  <h2>Kernel 4.19 Matrix <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
+  <h2 id="matrix">Kernel 4.19 Matrix <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/tag/v1.3-419-ksunext-33314-20261017">v1.3-419-ksunext-33314-20261017</a> · GPU default 430 MHz (unlock 750 MHz via modul GPU Control di bawah) · Manager yang dipakai: v3.4.2</div>
 
   <div class="grid">
@@ -237,7 +256,7 @@
   </div>
 
   <!-- ============ 4.19 NOMOUNT ============ -->
-  <h2>Kernel 4.19 + NoMount <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · NoMount</span></h2>
+  <h2 id="nomount">Kernel 4.19 + NoMount <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · NoMount</span></h2>
   <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/tag/v1.3-419-ksunext-33314-20261017">v1.3-419-ksunext-33314-20261017</a> · Manager yang dipakai: v3.4.2</div>
   <div class="note">
     <b>NoMount</b> mengalihkan isi file di VFS tanpa membuat mount (tidak muncul di <code>/proc/mounts</code>).
@@ -261,7 +280,7 @@
   </div>
 
   <!-- ============ DONASI ============ -->
-  <h2>Donasi <span class="small">— dukung pengembangan RSKSevenProject</span></h2>
+  <h2 id="donasi">Donasi <span class="small">— dukung pengembangan RSKSevenProject</span></h2>
   <div class="grid">
   <div class="card">
     <h3>Dukung via Teer.id</h3>
@@ -278,5 +297,29 @@
     <p class="small">© RSKSevenProject · File-file diunduh langsung dari GitHub Releases. Periksa MD5 setelah download.</p>
   </footer>
 </div>
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.card, h2');
+  els.forEach(function(el){el.classList.add('reveal');});
+  document.querySelectorAll('.grid').forEach(function(g){
+    g.querySelectorAll('.card').forEach(function(c,i){c.style.transitionDelay=(i*70)+'ms';});
+  });
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(el){el.classList.add('inview');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('inview');
+        io.unobserve(e.target);
+        setTimeout(function(){e.target.classList.remove('reveal');e.target.style.transitionDelay='';},700);
+      }
+    });
+  },{threshold:0.12});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
