@@ -1,325 +1,783 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RSKSevenProject — Download Kernel X00TD</title>
-<meta name="description" content="Hub download kernel RSKSevenProject untuk Asus Zenfone Max Pro M1 (X00TD).">
-<style>
-  :root{--bg:#0b0e13;--surface:#151a22;--surface2:#1b222e;--line:#232b38;--txt:#e6ebf2;--mut:#94a3b8;--acc:#f59e0b;--acc2:#38bdf8;--ok:#34d399}
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 16px 56px}
-  header{padding:40px 0 24px;text-align:center}
-  h1{font-size:38px;margin:0 0 8px;letter-spacing:-.5px}
-  h1 span{color:var(--acc)}
-  .sub{color:var(--mut);font-size:16px}
-  .badge{display:inline-block;background:#2a2415;color:#fbbf24;border:1px solid #5b4a1e;border-radius:999px;padding:4px 12px;font-size:13px;margin-top:12px}
-  .topnav{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;background:rgba(11,14,19,.94);border-bottom:1px solid var(--line);padding:12px 8px;margin:0 -16px 8px}
-  .topnav a{color:var(--mut);text-decoration:none;font-size:14px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid transparent}
-  .topnav a:hover{color:var(--txt);border-color:var(--line);background:var(--surface)}
-  .note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:14px;padding:16px 18px;margin:24px 0;font-size:14px;color:var(--mut)}
-  .note b{color:var(--txt)}
-  h2{font-size:22px;margin:40px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-  h3.sub{font-size:16px;margin:24px 0 10px;color:#c8d3e0}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-  .grid .card{margin:0}
-  .meta{color:var(--mut);font-size:13px;margin-bottom:14px}
-  .meta a{color:var(--acc2);text-decoration:none}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin:12px 0;display:flex;flex-direction:column;transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
-  .card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.45);border-color:#3a465a}
-  .card h3{margin:0 0 8px;font-size:18px}
-  .tags{margin:8px 0 12px}
-  .tag{display:inline-block;background:var(--surface2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--mut);margin:0 4px 4px 0}
-  .tag.hot{background:#1d2b22;color:var(--ok);border-color:#2f5d46}
-  .md5{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--mut);word-break:break-all;margin:10px 0}
-  .md5 code{color:#c8d3e0}
-  .btn{display:block;background:var(--acc);color:#1a1202;font-weight:700;text-decoration:none;text-align:center;padding:12px 18px;border-radius:12px;margin-top:auto;transition:transform .2s ease, filter .2s ease}
-  .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-  .btn.ghost{background:transparent;color:var(--acc2);border:1px solid #2b4a5f;padding:10px 14px;font-weight:600}
-  footer{margin-top:48px;text-align:center;color:var(--mut);font-size:13px}
-  footer a{color:var(--acc2);text-decoration:none}
-  .small{font-size:13px;color:var(--mut)}
-  html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .5s ease-out, transform .5s ease-out}
-  html.js .reveal.inview{opacity:1;transform:translateY(0)}
-  @media (prefers-reduced-motion:reduce){
-    *,*::before,*::after{animation:none!important;transition:none!important}
-    html{scroll-behavior:auto}
-    html.js .reveal{opacity:1;transform:none}
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <h1><span>RSKSeven</span>Project</h1>
-    <div class="sub">Download Kernel untuk Asus Zenfone Max Pro M1 (X00TD / ZB602KL)</div>
-    <span class="badge">Maintainer: @rusakseven7</span> <a class="badge" href="https://teer.id/rusakseven" style="text-decoration:none">♥ Donasi via Teer.id</a>
-  </header>
-  <nav class="topnav">
-    <a href="#rom">ROM</a>
-    <a href="#eas">Kernel 4.4</a>
-    <a href="#matrix">Kernel 4.19</a>
-    <a href="#donasi">Donasi</a>
-  </nav>
+<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Preview Hub RSKSeven</title>
+    <style>
+      * { box-sizing: border-box; }
 
-  <div class="note">
-    <b>Cara pilih:</b> cek versi kernel &amp; Android ROM-mu dulu.
-    <b>4.4</b> untuk ROM berbasis kernel 4.4 (Android 10–13).
-    <b>4.19</b> untuk ROM berbasis kernel 4.19 (Android 13+).
-    <b>LV</b> = Android 11, <b>NLV</b> = Android 10.
-    Semua ZIP di-flash lewat recovery (AnyKernel3).
-  </div>
-
-  <!-- ============ ROM RevengeOS 3.2-Q ============ -->
-  <h2 id="rom">ROM — RevengeOS 3.2-Q <span class="small">— Android 10 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/3.2-Q-20261102-release">3.2-Q-20261102-release</a> · 2 Nov 2026 · Test-keys · Varian vanilla (tanpa GApps)</div>
-
-  <div class="grid">
-  <div class="card">
-    <h3>RSKSeven RevengeOS 3.2-Q — 2 Nov 2026 (Vanilla)</h3>
-    <div class="tags"><span class="tag">ROM</span><span class="tag">Android 10</span><span class="tag hot">Baru · Vanilla</span></div>
-    <div class="small">RevengeOS 3.2-Q (Android 10), varian vanilla (tanpa GApps — flash GApps terpisah kalau perlu). Security patch 2020-08-05 (sesuai source ROM).</div>
-    <div class="small">Kernel bawaan: RSKSevenProject 4.4.302 prebuilt (Extreme) · KernelSU-Next + SuSFS · ZRAM zstd · Scheduler deadline di semua profil Spectrum · Profil CPU Spectrum diselaraskan (little 1843200 / big 2457600).</div>
-    <div class="small">Aplikasi tertanam: ZArchiver, SimpMusic, Open Camera (menggantikan Snap, Google Camera Go, Retro Music Player, dan Music/Eleven).</div>
-    <div class="small"><b>Clean flash disarankan</b> — wipe data, system, dan cache sebelum install. Dialog "There's an internal problem with your device" muncul satu kali tiap booting — tekan OK saja, tidak berpengaruh ke fungsi apa pun.</div>
-    <div class="md5">Ukuran: ~727 MB · MD5: <code>8616416dffcff31146bf5e82ca5438dd</code></div>
-    <a class="btn" href="https://github.com/rusakseven/rskseven-rom-x00td/releases/download/3.2-Q-20261102-release/RevengeOS-3.2-Q-UNOFFICIAL-X00TD-20261101-1314.zip">Download RevengeOS 3.2-Q (Vanilla)</a>
-  </div>
-  </div>
-
-  <!-- ============ ROM 19.1 ============ -->
-  <h2 id="rom191">ROM — LineageOS 19.1 <span class="small">— Android 12L · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/19.1-20261028-release">19.1-20261028-release</a> · 28 Okt 2026 · Signed release-keys (bukan test-keys)</div>
-
-  <div class="grid">
-  <div class="card">
-    <h3>RSKSeven LineageOS 19.1 — 28 Okt 2026 (GApps)</h3>
-    <div class="tags"><span class="tag">ROM</span><span class="tag">Android 12L</span><span class="tag hot">GApps tertanam</span></div>
-    <div class="small">LineageOS 19.1 (Android 12L), signed release-keys — varian GApps saja (Play Store, GBoard, wizard Google tertanam, tidak perlu flash GApps terpisah). Sudah lulus flash test penuh (clean flash).</div>
-    <div class="small">Kernel bawaan: 4.4.302-RSKSevenProject #43 (CPU hingga 2,0 GHz, GPU 430) · KernelSU-Next + SuSFS · ZRAM zstd · Scheduler deadline · Tuning RAM 3 GB.</div>
-    <div class="small"><b>Wajib CLEAN FLASH</b> — dari build tester (test-keys) maupun varian lain, dirty flash gagal verifikasi signature. GBoard terinstal tapi tidak jadi default otomatis — pilih manual di Settings.</div>
-    <div class="md5">Ukuran: ~1094 MB · MD5: <code>e6609fca052f55bf43c50ce557122690</code></div>
-    <a class="btn" href="https://github.com/rusakseven/rskseven-rom-x00td/releases/download/19.1-20261028-release/lineage-RSKSeven-19.1-20261028-UNOFFICIAL-X00TD-gapps.zip">Download ROM 19.1 (GApps)</a>
-  </div>
-  </div>
-
-  <!-- ============ ROM ============ -->
-  <h2 id="rom181">ROM — LineageOS 18.1 <span class="small">— Android 11 · ROM lengkap untuk X00TD (bukan cuma kernel)</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/build-26-release">build-26-release</a> · 20 Okt 2026 · Signed release-keys (bukan test-keys)</div>
-
-  <div class="grid">
-  <div class="card">
-    <h3>RSKSeven LineageOS 18.1 — Build #26</h3>
-    <div class="tags"><span class="tag">ROM</span><span class="tag">Android 11</span><span class="tag hot">Stabil · tanpa freeze</span></div>
-    <div class="small">LineageOS 18.1 (Android 11), signed release-keys — build stabil tanpa freeze (sudah dites flash, aman dengan &amp; tanpa GApps).</div>
-    <div class="small">Kernel bawaan: 4.4 HMP OC LV 2.2 GHz (4.4.302-RSKSevenProject #36) · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · ZRAM lz4. Aplikasi bawaan: Via Browser, SimpMusic, ZArchiver.</div>
-    <div class="small"><b>Wajib CLEAN FLASH</b> — wipe data/cache/dalvik sebelum install. GApps opsional, flash setelah ROM.</div>
-    <div class="md5">Ukuran: ~835 MB · MD5: <code>ee83d2563243be34f2fed9b9aa78525c</code></div>
-    <a class="btn" href="https://github.com/rusakseven/rskseven-rom-x00td/releases/download/build-26-release/lineage-18.1-20261020-UNOFFICIAL-X00TD-release.zip">Download ROM Build #26</a>
-  </div>
-  </div>
-
-  <!-- ============ 4.4 EAS ============ -->
-  <h2 id="eas">Kernel 4.4 EAS <span class="small">— 4.4.302 · EAS + schedutil · KernelSU-Next v3.2.0 · SuSFS v2.3.0</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/tag/v20261016-eas">v20261016-eas</a> · File build 17 Okt 2026 (fix haptic NLV) · GPU default 430 MHz (unlock 750 MHz via modul GPU Control)</div>
-
-  <h3 class="sub">LV — Android 11</h3>
-  <div class="grid">
-  <div class="card">
-    <h3>Stock LV — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>d81c64f0fe3f94dce5e1002f867bc8af</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Stock-EAS-LV-SUSFS-20261017.zip">Download Stock LV</a>
-  </div>
-  <div class="card">
-    <h3>OC LV — big 2.2 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>e9ddbb53d733c9c4c6ab831c8098011a</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-OC-EAS-LV-SUSFS-20261017.zip">Download OC LV</a>
-  </div>
-  <div class="card">
-    <h3>Extreme LV — big 2.46 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>19b26e81a46c23bac19f0bdf01142ca8</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Extreme-EAS-LV-SUSFS-20261017.zip">Download Extreme LV</a>
-  </div>
-  </div>
-
-  <h3 class="sub">NLV — Android 10</h3>
-  <div class="grid">
-  <div class="card">
-    <h3>Stock NLV — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>5fa9e186b69ff95d511465454b3d8eed</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Stock-EAS-NLV-SUSFS-20261017.zip">Download Stock NLV</a>
-  </div>
-  <div class="card">
-    <h3>OC NLV — big 2.2 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>7d898c0c6e1ef680b5cb96f175acd477</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-OC-EAS-NLV-SUSFS-20261017.zip">Download OC NLV</a>
-  </div>
-  <div class="card">
-    <h3>Extreme NLV — big 2.46 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>1abbaca32e99aadbbaa13a3f29a2a544</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Extreme-EAS-NLV-SUSFS-20261017.zip">Download Extreme NLV</a>
-  </div>
-  </div>
-
-  <!-- ============ 4.4 HMP ============ -->
-  <h2 id="hmp">Kernel 4.4 HMP <span class="small">— 4.4.302 · Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/tag/v1.3-hmp-ksunext-33314-20261020">v1.3-hmp-ksunext-33314-20261020</a> · LV: sama seperti v1.2 (src_freq reverted ke tabel stok, cap 430 MHz, aktual ~370 MHz) · NLV: cap GPU diturunkan ke 266 MHz (aktual 266, tabel src_freq FIXED) · NLV diperbarui 20 Okt 2026</div>
-  <div class="note">
-    Varian <b>HMP</b> (scheduler lama) — pilih ini kalau EAS bermasalah di ROM-mu, atau kalau kamu lebih suka HMP.
-    Sudah termasuk fix panel AUO FT8716F dan patch cmdline (androidboot.version + led.vibration).
-    <b>KSU di-update ke 3.4.0 (33314)</b> (v1.1 sudah ada KSU 3.2.0 + SuSFS) — Manager v3.4.2, Extreme LV sudah dites di HP.
-    <b>LV: src_freq reverted ke tabel stok (buggy)</b>, cap 430 MHz (aktual ~370 MHz) — fix src_freq menyebabkan random freeze di Android 11+, tabel bug terbukti stabil (dites di HP, ROM LOS 18.1, tidak freeze sebelum/sesudah GApps). LV di v1.3 sama persis seperti v1.2.
-    <b>NLV: src_freq fix, cap GPU 266 MHz</b> (aktual 266 MHz — frekuensi sejati aman di Android 10; Extreme NLV cap 430 dites di LOS 17, tidak ada masalah). v1.3 menurunkan cap NLV dari 430 ke 266 MHz.
-  </div>
-
-  <h3 class="sub">LV — Android 11 / 12 (GPU cap 430 MHz, aktual ~370 MHz)</h3>
-  <div class="grid">
-  <div class="card">
-    <h3>Stock LV — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>f1ef3e5f66df9cf1e8400de1019ce5e0</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-LV-SUSFS-v1.3-20261020.zip">Download Stock LV</a>
-  </div>
-  <div class="card">
-    <h3>OC LV — big 2.21 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>80da64acdfeb2ca86bcf9381a60212d0</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-LV-SUSFS-v1.3-20261020.zip">Download OC LV</a>
-  </div>
-  <div class="card">
-    <h3>Extreme LV — big 2.46 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>9759340f629dee3b1973c83a0d54edea</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-LV-SUSFS-v1.3-20261020.zip">Download Extreme LV</a>
-  </div>
-  </div>
-
-  <h3 class="sub">NLV — Android 10 (GPU cap 266 MHz, aktual 266 MHz)</h3>
-  <div class="grid">
-  <div class="card">
-    <h3>Stock NLV — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>e9f5bc46492af0a89c73c0c065115b29</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-NLV-SUSFS-v1.3-20261020.zip">Download Stock NLV</a>
-  </div>
-  <div class="card">
-    <h3>OC NLV — big 2.21 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>53124a84d1ecf51ca2980305f2d6123b</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-NLV-SUSFS-v1.3-20261020.zip">Download OC NLV</a>
-  </div>
-  <div class="card">
-    <h3>Extreme NLV — big 2.46 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.4</span><span class="tag">HMP</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>97962f80f3ccc29d70b99db90b6e7f50</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD/releases/download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-NLV-SUSFS-v1.3-20261020.zip">Download Extreme NLV</a>
-  </div>
-  </div>
-
-  <!-- ============ 4.19 MATRIX ============ -->
-  <h2 id="matrix">Kernel 4.19 Matrix <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/tag/v1.4-419-ksunext-33314-20261103">v1.4-419-ksunext-33314-20261103</a> · GPU default 430 MHz (unlock 750 MHz via modul GPU Control di bawah) · Manager yang dipakai: v3.4.2 · perbaikan Project Infinity A17</div>
-
-  <div class="grid">
-  <div class="card">
-    <h3>Stock — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.19</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>d421b019c656e4bb615598e8cdf6028b</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-Stock-20261103.zip">Download Stock</a>
-  </div>
-  <div class="card">
-    <h3>OC — big 2.2 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.19</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>808bb95ad34595d774a0abee4d9e1fa0</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-OC-20261103.zip">Download OC</a>
-  </div>
-  <div class="card">
-    <h3>Extreme — big 2.46 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.19</span><span class="tag">Overclock ekstrem</span></div>
-    <div class="md5">MD5: <code>1199184b85f695632c5d381a4415a98b</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-Extreme-20261103.zip">Download Extreme</a>
-  </div>
-  <div class="card">
-    <h3>RSKSeven GPU Control — modul KernelSU</h3>
-    <div class="tags"><span class="tag">Modul</span><span class="tag">Unlock GPU s.d. 750 MHz</span></div>
-    <div class="small">Flash setelah kernel. GPU di atas 430 MHz tergantung unit (silicon lottery); reboot mengembalikan ke default aman.</div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.4-419-ksunext-33314-20261103/RSKSeven-GPUControl-X00TD-v1.0.zip">Download GPU Control</a>
-  </div>
-  </div>
-
-  <!-- ============ 4.19 NOMOUNT ============ -->
-  <h2 id="nomount">Kernel 4.19 + NoMount <span class="small">— 4.19.325 · EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · NoMount</span></h2>
-  <div class="meta">Rilis: <a href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/tag/v1.3-419-ksunext-33314-20261017">v1.3-419-ksunext-33314-20261017</a> · Manager yang dipakai: v3.4.2</div>
-  <div class="note">
-    <b>NoMount</b> mengalihkan isi file di VFS tanpa membuat mount (tidak muncul di <code>/proc/mounts</code>).
-    Bisa inject file, sembunyikan file, dan memberi tampilan filesystem berbeda per-app.
-    <b>Kernel ini hanya menyediakan subsistem NoMount</b> — untuk memakainya, install juga <b>metamodule NoMount</b> dari Releases repo NoMount.
-  </div>
-
-  <div class="grid">
-  <div class="card">
-    <h3>Stock + NoMount — big 1.8 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.19</span><span class="tag">NoMount</span><span class="tag hot">Stabil · harian</span></div>
-    <div class="md5">MD5: <code>cd7c4a7b7d5ff78177c037f7ff549820</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.3-419-ksunext-33314-20261017/RSKSevenProject-X00TD-419-Stock-NOMOUNT-33314-20261017.zip">Download Stock NoMount</a>
-  </div>
-  <div class="card">
-    <h3>OC + NoMount — big 2.2 GHz</h3>
-    <div class="tags"><span class="tag">Kernel 4.19</span><span class="tag">NoMount</span><span class="tag">Overclock</span></div>
-    <div class="md5">MD5: <code>facf32bd3afb168f3b7c1c3f1b059074</code></div>
-    <a class="btn" href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/download/v1.3-419-ksunext-33314-20261017/RSKSevenProject-X00TD-419-OC-NOMOUNT-33314-20261017.zip">Download OC NoMount</a>
-  </div>
-  </div>
-
-  <!-- ============ DONASI ============ -->
-  <h2 id="donasi">Donasi <span class="small">— dukung pengembangan RSKSevenProject</span></h2>
-  <div class="grid">
-  <div class="card">
-    <h3>Dukung via Teer.id</h3>
-    <div class="tags"><span class="tag">Donasi</span><span class="tag hot">Sukarela</span></div>
-    <div class="small">Semua kernel dan ROM di sini gratis. Kalau merasa terbantu dan mau mendukung pengembangan ke depannya, donasi bisa lewat Teer.id — seikhlasnya, tidak wajib.</div>
-    <a class="btn" href="https://teer.id/rusakseven">Donasi di teer.id/rusakseven</a>
-  </div>
-  </div>
-
-  <footer>
-    <p>GitHub: <a href="https://github.com/rusakseven">github.com/rusakseven</a></p>
-    <p>Maintainer: <a href="https://t.me/rusakseven7">@rusakseven7</a> · Bug report: <a href="https://t.me/RSKSevensupport">@RSKSevensupport</a></p>
-    <p>Group: <a href="https://t.me/AZMPM1GC_ID">@AZMPM1GC_ID</a> · Channel: <a href="https://t.me/AZMPM1CH_ID">@AZMPM1CH_ID</a></p>
-    <p class="small">© RSKSevenProject · File-file diunduh langsung dari GitHub Releases. Periksa MD5 setelah download.</p>
-  </footer>
-</div>
-<script>
-document.documentElement.classList.add('js');
-(function(){
-  var els=document.querySelectorAll('.card, h2');
-  els.forEach(function(el){el.classList.add('reveal');});
-  document.querySelectorAll('.grid').forEach(function(g){
-    g.querySelectorAll('.card').forEach(function(c,i){c.style.transitionDelay=(i*70)+'ms';});
-  });
-  if(!('IntersectionObserver' in window)){
-    els.forEach(function(el){el.classList.add('inview');});
-    return;
-  }
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('inview');
-        io.unobserve(e.target);
-        setTimeout(function(){e.target.classList.remove('reveal');e.target.style.transitionDelay='';},700);
+      :root, [data-theme="dark"] {
+        --bg: #0c1210;
+        --bg-soft: #101815;
+        --surface: #151e1a;
+        --surface-2: #1b2621;
+        --border: #2f4239;
+        --border-soft: #24332c;
+        --text: #ecf4ef;
+        --muted: #a7bcb0;
+        --faint: #7c9184;
+        --accent: #34d399;
+        --accent-strong: #6ee7b7;
+        --accent-dim: rgba(52, 211, 153, .14);
+        --accent-ink: #052e20;
+        --ok: #9fce8f;
+        --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+        --scroll-thumb: #26382f;
+        --scroll-thumb-hover: #3a5546;
       }
-    });
-  },{threshold:0.12});
-  els.forEach(function(el){io.observe(el);});
-})();
-</script>
-</body>
+      [data-theme="light"] {
+        --bg: #f5f8f6;
+        --bg-soft: #edf3ef;
+        --surface: #ffffff;
+        --surface-2: #eef4f0;
+        --border: #bfd6c9;
+        --border-soft: #dce9e0;
+        --text: #122019;
+        --muted: #50645a;
+        --faint: #7f9388;
+        --accent: #059669;
+        --accent-strong: #047857;
+        --accent-dim: rgba(5, 150, 105, .1);
+        --accent-ink: #ffffff;
+        --ok: #4c7a34;
+        --shadow: 0 10px 26px rgba(16, 74, 52, .12);
+        --scroll-thumb: #ccdcd2;
+        --scroll-thumb-hover: #a9c4b2;
+      }
+
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-system, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, p { margin: 0; }
+      a { color: var(--accent); }
+      button { font: inherit; cursor: pointer; }
+      ::selection { background: var(--accent); color: var(--accent-ink); }
+
+      /* ---------- Scrollbar: sangat tipis, menyamar ke latar (halaman kanan + sidebar) ---------- */
+      * { scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) transparent; }
+      ::-webkit-scrollbar, html::-webkit-scrollbar, .sidebar::-webkit-scrollbar { width: 5px; height: 5px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb {
+        background: var(--scroll-thumb); border-radius: 999px;
+        border: 1px solid transparent; background-clip: padding-box;
+      }
+      ::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); background-clip: padding-box; }
+      ::-webkit-scrollbar-corner { background: transparent; }
+
+      .layout { display: flex; min-height: 100vh; }
+
+      /* ---------- Sidebar ---------- */
+      .sidebar {
+        width: 268px; flex: 0 0 268px;
+        position: sticky; top: 0; height: 100vh;
+        display: flex; flex-direction: column;
+        background: var(--bg-soft);
+        border-right: 1px solid var(--border-soft);
+        padding: 26px 20px 20px;
+        overflow-y: auto;
+      }
+      .brand-name {
+        font-size: 21px; font-weight: 800; letter-spacing: -.01em; line-height: 1.15;
+      }
+      .brand-name span { color: var(--accent); }
+      .brand-sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+      .preview-chip {
+        display: inline-block; margin-top: 10px;
+        font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+        color: var(--accent); background: var(--accent-dim);
+        border: 1px solid var(--accent); border-radius: 999px; padding: 2px 9px;
+      }
+      .nav-label {
+        margin: 28px 0 8px; font-size: 11px; font-weight: 700;
+        letter-spacing: .12em; text-transform: uppercase; color: var(--faint);
+      }
+      .nav { display: flex; flex-direction: column; gap: 2px; }
+      .nav a {
+        display: flex; align-items: center; gap: 10px;
+        padding: 9px 10px; border-radius: 9px;
+        color: var(--text); text-decoration: none; font-size: 14.5px; font-weight: 550;
+      }
+      .nav a svg { flex: 0 0 auto; color: var(--faint); }
+      .nav a:hover { background: var(--surface-2); }
+      .nav a.active { background: var(--accent-dim); color: var(--accent-strong); }
+      .nav a.active svg { color: var(--accent); }
+      .nav .count { margin-left: auto; font-size: 12px; color: var(--faint); font-weight: 600; }
+      .nav a.active .count { color: var(--accent); }
+
+      .device-card {
+        margin-top: auto; padding-top: 22px;
+      }
+      .device-card-inner {
+        background: var(--surface); border: 1px solid var(--border-soft);
+        border-radius: 14px; padding: 14px 16px;
+      }
+      .device-card h3 { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+      .device-card dl { margin: 0; display: grid; gap: 7px; }
+      .device-card .row { display: flex; justify-content: space-between; gap: 12px; font-size: 13.5px; }
+      .device-card dt { color: var(--muted); }
+      .device-card dd { margin: 0; font-weight: 650; text-align: right; }
+
+      .theme-btn {
+        margin-top: 14px; width: 100%;
+        display: flex; align-items: center; justify-content: center; gap: 9px;
+        background: var(--surface); color: var(--text);
+        border: 1px solid var(--border); border-radius: 11px;
+        padding: 10px 12px; font-size: 14px; font-weight: 600;
+      }
+      .theme-btn:hover { border-color: var(--accent); color: var(--accent-strong); }
+
+      /* ---------- Main ---------- */
+      .main { flex: 1 1 auto; min-width: 0; }
+      .wrap { max-width: 1020px; margin: 0 auto; padding: 44px 40px 64px; }
+
+      .hero { padding: 18px 0 8px; }
+      .hero-kicker {
+        font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+        color: var(--accent); margin-bottom: 14px;
+      }
+      .hero h1 {
+        font-size: clamp(38px, 5.4vw, 58px); line-height: 1.04;
+        font-weight: 850; letter-spacing: -.02em; max-width: 640px;
+      }
+      .hero h1 em { font-style: normal; color: var(--accent); }
+      .hero p.lede { margin-top: 18px; color: var(--muted); font-size: 17px; max-width: 620px; }
+      .hero-stats { display: flex; flex-wrap: wrap; gap: 10px 34px; margin-top: 26px; }
+      .hero-stats .stat b { display: block; font-size: 24px; font-weight: 800; letter-spacing: -.01em; }
+      .hero-stats .stat span { font-size: 13px; color: var(--muted); }
+
+      .guide {
+        margin-top: 30px; background: var(--surface);
+        border: 1px solid var(--border-soft); border-radius: 14px; padding: 16px 18px;
+        font-size: 14.5px; color: var(--muted);
+      }
+      .guide strong { color: var(--text); }
+
+      .section-head { margin: 46px 0 16px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+      .section-head h2 { font-size: 24px; font-weight: 800; letter-spacing: -.01em; }
+      .section-head p { color: var(--muted); font-size: 14.5px; }
+
+      /* ---------- Latest release ---------- */
+      .latest {
+        background: var(--surface); border: 1px solid var(--accent);
+        border-radius: 16px; padding: 22px; box-shadow: var(--shadow);
+      }
+      .latest-top { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+      .latest-badge {
+        font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+        background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 3px 10px;
+      }
+      .latest-date { color: var(--muted); font-size: 13.5px; }
+      .latest h3 { font-size: 21px; font-weight: 800; margin-top: 12px; letter-spacing: -.01em; }
+      .latest .desc { color: var(--muted); font-size: 14.5px; margin-top: 6px; max-width: 720px; }
+      .latest-files { margin-top: 16px; display: grid; gap: 8px; }
+      .latest-file {
+        display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+        background: var(--surface-2); border: 1px solid var(--border-soft);
+        border-radius: 11px; padding: 10px 14px;
+      }
+      .latest-file .fname { font-weight: 700; font-size: 14.5px; }
+      .latest-file .fmd5 { margin-left: auto; }
+
+      /* ---------- Toolbar ---------- */
+      .toolbar {
+        display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+        background: var(--surface); border: 1px solid var(--border-soft);
+        border-radius: 14px; padding: 12px; margin-bottom: 8px;
+        position: sticky; top: 12px; z-index: 5; box-shadow: var(--shadow);
+      }
+      .search {
+        flex: 1 1 210px; display: flex; align-items: center; gap: 9px;
+        background: var(--bg-soft); border: 1px solid var(--border-soft);
+        border-radius: 10px; padding: 0 12px;
+      }
+      .search svg { color: var(--faint); flex: 0 0 auto; }
+      .search input {
+        flex: 1; min-width: 0; border: 0; background: transparent; color: var(--text);
+        font: inherit; font-size: 14.5px; padding: 10px 0; outline: none;
+      }
+      .search input::placeholder { color: var(--faint); }
+      .toolbar select {
+        background: var(--bg-soft); color: var(--text);
+        border: 1px solid var(--border-soft); border-radius: 10px;
+        font: inherit; font-size: 14px; padding: 10px 8px; max-width: 100%;
+      }
+      .view-toggle { display: flex; border: 1px solid var(--border-soft); border-radius: 10px; overflow: hidden; }
+      .view-toggle button {
+        background: var(--bg-soft); color: var(--muted); border: 0;
+        padding: 9px 12px; display: flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600;
+      }
+      .view-toggle button[aria-pressed="true"] { background: var(--accent-dim); color: var(--accent-strong); }
+
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+      .chip {
+        background: var(--surface); color: var(--muted);
+        border: 1px solid var(--border-soft); border-radius: 999px;
+        padding: 6px 14px; font-size: 13.5px; font-weight: 600;
+      }
+      .chip:hover { border-color: var(--accent); color: var(--text); }
+      .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+      .result-meta { color: var(--faint); font-size: 13.5px; margin: 10px 2px 14px; }
+
+      /* ---------- Build items ---------- */
+      .items { display: grid; gap: 10px; }
+      .items.grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+
+      .item {
+        background: var(--surface); border: 1px solid var(--border-soft);
+        border-radius: 14px; padding: 18px;
+        display: flex; gap: 18px; align-items: flex-start;
+      }
+      .items.grid .item { flex-direction: column; gap: 12px; }
+      .item-body { flex: 1 1 auto; min-width: 0; }
+      .item h3 { font-size: 17px; font-weight: 750; letter-spacing: -.005em; line-height: 1.3; }
+      .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+      .badge {
+        font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 2px 9px;
+        background: var(--surface-2); color: var(--muted); border: 1px solid var(--border-soft);
+      }
+      .badge.cat { background: var(--accent-dim); color: var(--accent-strong); border-color: transparent; }
+      .item .desc { color: var(--muted); font-size: 14px; margin-top: 9px; }
+      .item .meta-line { color: var(--faint); font-size: 13px; margin-top: 9px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+      .item .meta-line a { font-weight: 600; text-decoration: none; }
+      .item .meta-line a:hover { text-decoration: underline; }
+
+      .item-side {
+        flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 10px;
+      }
+      .items.grid .item-side { align-items: stretch; width: 100%; }
+      .md5-box { text-align: right; }
+      .items.grid .md5-box { text-align: left; }
+      .md5-label { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); }
+      .md5-row { display: flex; align-items: center; gap: 7px; margin-top: 2px; }
+      .md5 {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 12px; color: var(--muted); word-break: break-all;
+      }
+      .copy-btn {
+        background: var(--surface-2); border: 1px solid var(--border-soft); color: var(--muted);
+        border-radius: 7px; padding: 4px 7px; font-size: 11.5px; font-weight: 650; flex: 0 0 auto;
+        display: inline-flex; align-items: center; gap: 5px;
+      }
+      .copy-btn:hover { color: var(--accent-strong); border-color: var(--accent); }
+      .copy-btn.copied { color: var(--ok); border-color: var(--ok); }
+
+      .dl-btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        background: var(--accent); color: var(--accent-ink);
+        font-weight: 750; font-size: 14.5px; text-decoration: none;
+        border-radius: 10px; padding: 10px 18px; white-space: nowrap;
+      }
+      .dl-btn:hover { background: var(--accent-strong); }
+      .items.grid .dl-btn { justify-content: center; }
+
+      .empty {
+        border: 1px dashed var(--border); border-radius: 14px;
+        padding: 34px 20px; text-align: center; color: var(--muted); font-size: 15px;
+      }
+      .empty button { margin-top: 12px; }
+
+      /* ---------- Donasi ---------- */
+      .donate {
+        margin-top: 52px; background: var(--surface);
+        border: 1px solid var(--border-soft); border-radius: 16px; padding: 24px;
+        display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+      }
+      .donate-text { flex: 1 1 320px; min-width: 0; }
+      .donate h2 { font-size: 21px; font-weight: 800; }
+      .donate p { color: var(--muted); font-size: 14.5px; margin-top: 6px; }
+
+      footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--border-soft); color: var(--faint); font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+      footer a { color: var(--muted); text-decoration: none; font-weight: 600; }
+      footer a:hover { color: var(--accent-strong); }
+
+      /* ---------- Mobile: sidebar jadi navigasi atas ---------- */
+      .mobile-bar { display: none; }
+      @media (max-width: 900px) {
+        .layout { flex-direction: column; }
+        .sidebar {
+          position: sticky; top: 0; z-index: 20;
+          width: 100%; flex: none; height: auto;
+          padding: 14px 16px 12px;
+          border-right: 0; border-bottom: 1px solid var(--border-soft);
+        }
+        .sidebar-top { display: flex; align-items: flex-start; gap: 12px; }
+        .brand-sub, .preview-chip { margin-top: 2px; }
+        .preview-chip { margin-left: 8px; }
+        .sidebar .theme-btn { width: auto; margin: 0 0 0 auto; padding: 8px 11px; flex: 0 0 auto; }
+        .sidebar .theme-btn .theme-label { display: none; }
+        .nav-label { display: none; }
+        .nav { flex-direction: row; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+        .nav a { padding: 7px 11px; font-size: 13.5px; background: var(--surface); border: 1px solid var(--border-soft); }
+        .nav a.active { border-color: var(--accent); }
+        .nav .count { display: none; }
+        .device-card { display: none; }
+        .wrap { padding: 28px 18px 52px; }
+        .toolbar { position: static; }
+        .item { flex-direction: column; gap: 12px; }
+        .item-side { align-items: stretch; width: 100%; }
+        .md5-box { text-align: left; }
+        .dl-btn { justify-content: center; }
+        .latest-file .fmd5 { margin-left: 0; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        * { transition: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <div>
+            <div class="brand-name">RSKSeven<span>Project</span></div>
+            <div class="brand-sub">Download hub · X00TD</div>
+            <span class="preview-chip">Preview</span>
+          </div>
+          <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema gelap / terang">
+            <svg id="themeIconSun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            <svg id="themeIconMoon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <span class="theme-label">Tema terang</span>
+          </button>
+        </div>
+
+        <div class="nav-label">Navigasi</div>
+        <nav class="nav" id="mainNav" aria-label="Navigasi hub">
+          <a href="#beranda" data-nav="home" class="active">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+            Beranda
+          </a>
+          <a href="#arsip" data-nav="rom">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg>
+            ROM <span class="count">3</span>
+          </a>
+          <a href="#arsip" data-nav="eas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            Kernel 4.4 EAS <span class="count">6</span>
+          </a>
+          <a href="#arsip" data-nav="hmp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            Kernel 4.4 HMP <span class="count">6</span>
+          </a>
+          <a href="#arsip" data-nav="matrix">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            Kernel 4.19 Matrix <span class="count">3</span>
+          </a>
+          <a href="#arsip" data-nav="nomount">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            Kernel 4.19 NoMount <span class="count">2</span>
+          </a>
+          <a href="#arsip" data-nav="modul">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Modul <span class="count">1</span>
+          </a>
+          <a href="#donasi" data-nav="donasi">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12.6 12 20l-7.5-7.4A5.2 5.2 0 1 1 12 6.3a5.2 5.2 0 1 1 7.5 6.3z"/></svg>
+            Donasi
+          </a>
+        </nav>
+
+        <div class="device-card">
+          <div class="device-card-inner">
+            <h3>Perangkat yang didukung</h3>
+            <dl>
+              <div class="row"><dt>Perangkat</dt><dd>ASUS Zenfone Max Pro M1</dd></div>
+              <div class="row"><dt>Codename</dt><dd>X00TD</dd></div>
+              <div class="row"><dt>Platform</dt><dd>Snapdragon 636</dd></div>
+            </dl>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <div class="wrap">
+
+          <section class="hero" id="beranda">
+            <div class="hero-kicker">RSKSevenProject / X00TD</div>
+            <h1>ROM &amp; kernel. <em>Untuk Max Pro M1.</em></h1>
+            <p class="lede">Semua build RSKSevenProject untuk ASUS Zenfone Max Pro M1 (X00TD) di satu tempat — ROM lengkap, kernel 4.4 dan 4.19, plus modul pendamping. Cari, saring, lalu unduh langsung.</p>
+            <div class="hero-stats">
+              <div class="stat"><b>21</b><span>file unduhan</span></div>
+              <div class="stat"><b>3</b><span>ROM lengkap</span></div>
+              <div class="stat"><b>17</b><span>varian kernel</span></div>
+              <div class="stat"><b>1</b><span>modul KernelSU</span></div>
+            </div>
+            <div class="guide">
+              <strong>Cara pilih:</strong> cek versi kernel &amp; Android ROM-mu dulu. <strong>4.4</strong> untuk ROM berbasis kernel 4.4 (Android 10–13). <strong>4.19</strong> untuk ROM berbasis kernel 4.19 (Android 13+). <strong>LV</strong> = Android 11, <strong>NLV</strong> = Android 10. Semua ZIP di-flash lewat recovery (AnyKernel3).
+            </div>
+          </section>
+
+          <div class="section-head">
+            <h2>Rilis terbaru</h2>
+            <p>3 November 2026</p>
+          </div>
+          <section class="latest" aria-label="Rilis terbaru">
+            <div class="latest-top">
+              <span class="latest-badge">Latest release</span>
+              <span class="latest-date">Kernel 4.19 Matrix · v1.4 · 4.19.325 · EAS + schedutil</span>
+            </div>
+            <h3>Kernel 4.19 Matrix v1.4</h3>
+            <p class="desc">KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · GPU default 430 MHz (unlock 750 MHz via modul GPU Control) · Manager yang dipakai: v3.4.2 · termasuk perbaikan Project Infinity A17.</p>
+            <div class="latest-files" id="latestFiles"></div>
+            <p class="desc" style="margin-top:14px"><a href="https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/tag/v1.4-419-ksunext-33314-20261103" target="_blank" rel="noopener">Lihat halaman rilis di GitHub →</a></p>
+          </section>
+
+          <div class="section-head" id="arsip">
+            <h2>Arsip build</h2>
+            <p>21 build — pilih untuk mengunduh langsung.</p>
+          </div>
+
+          <div class="toolbar" role="search">
+            <label class="search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+              <input type="search" id="q" placeholder="Cari build… (mis. Extreme, LV, LineageOS)" aria-label="Cari build" />
+            </label>
+            <select id="fAndroid" aria-label="Filter versi Android">
+              <option value="all">Android: semua</option>
+              <option value="10">Android 10</option>
+              <option value="11">Android 11</option>
+              <option value="12">Android 12 / 12L</option>
+              <option value="13">Android 13+</option>
+            </select>
+            <select id="fVariant" aria-label="Filter varian">
+              <option value="all">Varian: semua</option>
+              <option value="Stock">Stock</option>
+              <option value="OC">OC</option>
+              <option value="Extreme">Extreme</option>
+              <option value="LV">LV</option>
+              <option value="NLV">NLV</option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="GApps">GApps</option>
+            </select>
+            <select id="fSort" aria-label="Urutkan">
+              <option value="new">Terbaru dulu</option>
+              <option value="old">Terlama dulu</option>
+              <option value="name">Nama A–Z</option>
+              <option value="clock">Clock CPU tertinggi</option>
+            </select>
+            <div class="view-toggle" role="group" aria-label="Tampilan daftar">
+              <button type="button" id="viewList" aria-pressed="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>
+                List
+              </button>
+              <button type="button" id="viewGrid" aria-pressed="false">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                Grid
+              </button>
+            </div>
+          </div>
+
+          <div class="chips" id="catChips" role="group" aria-label="Filter kategori">
+            <button type="button" class="chip" data-cat="all" aria-pressed="true">Semua</button>
+            <button type="button" class="chip" data-cat="rom" aria-pressed="false">ROM</button>
+            <button type="button" class="chip" data-cat="eas" aria-pressed="false">Kernel 4.4 EAS</button>
+            <button type="button" class="chip" data-cat="hmp" aria-pressed="false">Kernel 4.4 HMP v1.3</button>
+            <button type="button" class="chip" data-cat="matrix" aria-pressed="false">Kernel 4.19 Matrix v1.4</button>
+            <button type="button" class="chip" data-cat="nomount" aria-pressed="false">Kernel 4.19 NoMount v1.3</button>
+            <button type="button" class="chip" data-cat="modul" aria-pressed="false">Modul</button>
+          </div>
+
+          <p class="result-meta" id="resultMeta"></p>
+          <div class="items" id="items"></div>
+          <div class="empty" id="emptyState" hidden>
+            Tidak ada build yang cocok dengan pencarian / filter saat ini.<br />
+            <button type="button" class="chip" id="resetFilters">Atur ulang filter</button>
+          </div>
+
+          <section class="donate" id="donasi">
+            <div class="donate-text">
+              <h2>Donasi — dukung pengembangan RSKSevenProject</h2>
+              <p>Semua kernel dan ROM di sini gratis. Kalau merasa terbantu dan mau mendukung pengembangan ke depannya, donasi bisa lewat Teer.id — seikhlasnya, tidak wajib.</p>
+            </div>
+            <a class="dl-btn" href="https://teer.id/rusakseven" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12.6 12 20l-7.5-7.4A5.2 5.2 0 1 1 12 6.3a5.2 5.2 0 1 1 7.5 6.3z"/></svg>
+              Donasi di teer.id/rusakseven
+            </a>
+          </section>
+
+          <footer>
+            <span>RSKSevenProject — ASUS Zenfone Max Pro M1 (X00TD)</span>
+            <a href="https://rskseven.my.id/" target="_blank" rel="noopener">Situs live: rskseven.my.id</a>
+            <a href="https://t.me/AZMPM1CH_ID" target="_blank" rel="noopener">Channel Telegram</a>
+            <a href="https://t.me/AZMPM1GC_ID" target="_blank" rel="noopener">Grup Telegram</a>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+
+      var GH_ROM = "https://github.com/rusakseven/rskseven-rom-x00td/releases/";
+      var GH_EAS = "https://github.com/rusakseven/RSKSevenProject-X00TD-Kernel-44-EAS/releases/";
+      var GH_44  = "https://github.com/rusakseven/RSKSevenProject-X00TD/releases/";
+      var GH_419 = "https://github.com/rusakseven/RSKSevenProject-X00TD-419/releases/";
+
+      var CAT_LABEL = {
+        rom: "ROM",
+        eas: "Kernel 4.4 EAS",
+        hmp: "Kernel 4.4 HMP v1.3",
+        matrix: "Kernel 4.19 Matrix v1.4",
+        nomount: "Kernel 4.19 NoMount v1.3",
+        modul: "Modul KernelSU"
+      };
+
+      var EAS_NOTE = "EAS + schedutil · KernelSU-Next v3.2.0 · SuSFS v2.3.0 · GPU default 430 MHz (unlock 750 MHz via modul GPU Control) · file build 17 Okt 2026, termasuk fix haptic NLV.";
+      var HMP_LV_NOTE = "Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · GPU cap 430 MHz (aktual ~370 MHz) · termasuk fix panel AUO FT8716F dan patch cmdline.";
+      var HMP_NLV_NOTE = "Scheduler HMP · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · GPU cap 266 MHz (aktual 266 MHz, tabel src_freq FIXED) · termasuk fix panel AUO FT8716F dan patch cmdline.";
+      var MATRIX_NOTE = "EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · GPU default 430 MHz (unlock 750 MHz via modul GPU Control) · Manager v3.4.2 · perbaikan Project Infinity A17.";
+      var NOMOUNT_NOTE = "EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · NoMount mengalihkan isi file di VFS tanpa mount — kernel ini menyediakan subsistemnya, install juga metamodule NoMount dari Releases repo NoMount agar aktif.";
+
+      var ITEMS = [
+        {
+          name: "RevengeOS 3.2-Q (Vanilla)", cat: "rom",
+          android: ["10"], androidLabel: "Android 10", variants: ["Vanilla"],
+          date: "2026-11-02", dateLabel: "2 Nov 2026", clock: 2.46, size: "~727 MB",
+          tagline: "ROM Android 10 · Baru · Vanilla",
+          desc: "RevengeOS 3.2-Q (Android 10), varian vanilla (tanpa GApps — flash GApps terpisah kalau perlu). Security patch 2020-08-05 (sesuai source ROM). Kernel bawaan: RSKSevenProject 4.4.302 prebuilt (Extreme) · KernelSU-Next + SuSFS · ZRAM zstd · Scheduler deadline di semua profil Spectrum · Profil CPU Spectrum diselaraskan (little 1843200 / big 2457600). Aplikasi tertanam: ZArchiver, SimpMusic, Open Camera. Clean flash disarankan — wipe data, system, dan cache sebelum install. Dialog \u201cThere's an internal problem with your device\u201d muncul satu kali tiap booting — tekan OK saja, tidak berpengaruh ke fungsi apa pun.",
+          md5: "8616416dffcff31146bf5e82ca5438dd",
+          url: GH_ROM + "download/3.2-Q-20261102-release/RevengeOS-3.2-Q-UNOFFICIAL-X00TD-20261101-1314.zip",
+          release: GH_ROM + "tag/3.2-Q-20261102-release"
+        },
+        {
+          name: "LineageOS 19.1 (GApps)", cat: "rom",
+          android: ["12"], androidLabel: "Android 12L", variants: ["GApps"],
+          date: "2026-10-28", dateLabel: "28 Okt 2026", clock: 2.0, size: "~1094 MB",
+          tagline: "ROM Android 12L · GApps tertanam",
+          desc: "LineageOS 19.1 (Android 12L), signed release-keys — varian GApps saja (Play Store, GBoard, wizard Google tertanam, tidak perlu flash GApps terpisah). Sudah lulus flash test penuh (clean flash). Kernel bawaan: 4.4.302-RSKSevenProject #43 (CPU hingga 2,0 GHz, GPU 430) · KernelSU-Next + SuSFS · ZRAM zstd · Scheduler deadline · Tuning RAM 3 GB. Wajib CLEAN FLASH — dari build tester (test-keys) maupun varian lain, dirty flash gagal verifikasi signature. GBoard terinstal tapi tidak jadi default otomatis — pilih manual di Settings.",
+          md5: "e6609fca052f55bf43c50ce557122690",
+          url: GH_ROM + "download/19.1-20261028-release/lineage-RSKSeven-19.1-20261028-UNOFFICIAL-X00TD-gapps.zip",
+          release: GH_ROM + "tag/19.1-20261028-release"
+        },
+        {
+          name: "LineageOS 18.1 — Build #26", cat: "rom",
+          android: ["11"], androidLabel: "Android 11", variants: [],
+          date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 2.2, size: "~835 MB",
+          tagline: "ROM Android 11 · Stabil · tanpa freeze",
+          desc: "LineageOS 18.1 (Android 11), signed release-keys — build stabil tanpa freeze (sudah dites flash, aman dengan & tanpa GApps). Kernel bawaan: 4.4 HMP OC LV 2.2 GHz (4.4.302-RSKSevenProject #36) · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · ZRAM lz4. Aplikasi bawaan: Via Browser, SimpMusic, ZArchiver. Wajib CLEAN FLASH — wipe data/cache/dalvik sebelum install. GApps opsional, flash setelah ROM.",
+          md5: "ee83d2563243be34f2fed9b9aa78525c",
+          url: GH_ROM + "download/build-26-release/lineage-18.1-20261020-UNOFFICIAL-X00TD-release.zip",
+          release: GH_ROM + "tag/build-26-release"
+        },
+
+        { name: "Stock LV — big 1.8 GHz", cat: "eas", android: ["11"], androidLabel: "Android 11 (LV)", variants: ["Stock", "LV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 1.8, tagline: "Kernel 4.4 · Stabil · harian", desc: EAS_NOTE, md5: "d81c64f0fe3f94dce5e1002f867bc8af", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Stock-EAS-LV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+        { name: "OC LV — big 2.2 GHz", cat: "eas", android: ["11"], androidLabel: "Android 11 (LV)", variants: ["OC", "LV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 2.2, tagline: "Kernel 4.4 · Overclock", desc: EAS_NOTE, md5: "e9ddbb53d733c9c4c6ab831c8098011a", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-OC-EAS-LV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+        { name: "Extreme LV — big 2.46 GHz", cat: "eas", android: ["11"], androidLabel: "Android 11 (LV)", variants: ["Extreme", "LV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 2.46, tagline: "Kernel 4.4 · Overclock ekstrem", desc: EAS_NOTE, md5: "19b26e81a46c23bac19f0bdf01142ca8", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Extreme-EAS-LV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+        { name: "Stock NLV — big 1.8 GHz", cat: "eas", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["Stock", "NLV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 1.8, tagline: "Kernel 4.4 · Stabil · harian", desc: EAS_NOTE, md5: "5fa9e186b69ff95d511465454b3d8eed", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Stock-EAS-NLV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+        { name: "OC NLV — big 2.2 GHz", cat: "eas", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["OC", "NLV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 2.2, tagline: "Kernel 4.4 · Overclock", desc: EAS_NOTE, md5: "7d898c0c6e1ef680b5cb96f175acd477", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-OC-EAS-NLV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+        { name: "Extreme NLV — big 2.46 GHz", cat: "eas", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["Extreme", "NLV"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 2.46, tagline: "Kernel 4.4 · Overclock ekstrem", desc: EAS_NOTE, md5: "1abbaca32e99aadbbaa13a3f29a2a544", url: GH_EAS + "download/v20261016-eas/RSKSevenProject-X00TD-KSUNext-Extreme-EAS-NLV-SUSFS-20261017.zip", release: GH_EAS + "tag/v20261016-eas" },
+
+        { name: "Stock LV — big 1.8 GHz", cat: "hmp", android: ["11", "12"], androidLabel: "Android 11 / 12 (LV)", variants: ["Stock", "LV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 1.8, tagline: "Kernel 4.4 HMP · Stabil · harian", desc: HMP_LV_NOTE, md5: "f1ef3e5f66df9cf1e8400de1019ce5e0", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-LV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+        { name: "OC LV — big 2.21 GHz", cat: "hmp", android: ["11", "12"], androidLabel: "Android 11 / 12 (LV)", variants: ["OC", "LV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 2.21, tagline: "Kernel 4.4 HMP · Overclock", desc: HMP_LV_NOTE, md5: "80da64acdfeb2ca86bcf9381a60212d0", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-LV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+        { name: "Extreme LV — big 2.46 GHz", cat: "hmp", android: ["11", "12"], androidLabel: "Android 11 / 12 (LV)", variants: ["Extreme", "LV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 2.46, tagline: "Kernel 4.4 HMP · Overclock ekstrem", desc: HMP_LV_NOTE, md5: "9759340f629dee3b1973c83a0d54edea", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-LV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+        { name: "Stock NLV — big 1.8 GHz", cat: "hmp", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["Stock", "NLV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 1.8, tagline: "Kernel 4.4 HMP · Stabil · harian", desc: HMP_NLV_NOTE, md5: "e9f5bc46492af0a89c73c0c065115b29", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Stock-HMP-NLV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+        { name: "OC NLV — big 2.21 GHz", cat: "hmp", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["OC", "NLV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 2.21, tagline: "Kernel 4.4 HMP · Overclock", desc: HMP_NLV_NOTE, md5: "53124a84d1ecf51ca2980305f2d6123b", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-OC-HMP-NLV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+        { name: "Extreme NLV — big 2.46 GHz", cat: "hmp", android: ["10"], androidLabel: "Android 10 (NLV)", variants: ["Extreme", "NLV"], date: "2026-10-20", dateLabel: "20 Okt 2026", clock: 2.46, tagline: "Kernel 4.4 HMP · Overclock ekstrem", desc: HMP_NLV_NOTE, md5: "97962f80f3ccc29d70b99db90b6e7f50", url: GH_44 + "download/v1.3-hmp-ksunext-33314-20261020/RSKSevenProject-X00TD-KSUNext-Extreme-HMP-NLV-SUSFS-v1.3-20261020.zip", release: GH_44 + "tag/v1.3-hmp-ksunext-33314-20261020" },
+
+        { name: "Stock — big 1.8 GHz", cat: "matrix", android: ["13"], androidLabel: "Android 13+", variants: ["Stock"], date: "2026-11-03", dateLabel: "3 Nov 2026", clock: 1.8, tagline: "Kernel 4.19 · Stabil · harian", desc: MATRIX_NOTE, md5: "d421b019c656e4bb615598e8cdf6028b", url: GH_419 + "download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-Stock-20261103.zip", release: GH_419 + "tag/v1.4-419-ksunext-33314-20261103" },
+        { name: "OC — big 2.2 GHz", cat: "matrix", android: ["13"], androidLabel: "Android 13+", variants: ["OC"], date: "2026-11-03", dateLabel: "3 Nov 2026", clock: 2.2, tagline: "Kernel 4.19 · Overclock", desc: MATRIX_NOTE, md5: "808bb95ad34595d774a0abee4d9e1fa0", url: GH_419 + "download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-OC-20261103.zip", release: GH_419 + "tag/v1.4-419-ksunext-33314-20261103" },
+        { name: "Extreme — big 2.46 GHz", cat: "matrix", android: ["13"], androidLabel: "Android 13+", variants: ["Extreme"], date: "2026-11-03", dateLabel: "3 Nov 2026", clock: 2.46, tagline: "Kernel 4.19 · Overclock ekstrem", desc: MATRIX_NOTE, md5: "1199184b85f695632c5d381a4415a98b", url: GH_419 + "download/v1.4-419-ksunext-33314-20261103/RSKSevenProject-X00TD-419-Extreme-20261103.zip", release: GH_419 + "tag/v1.4-419-ksunext-33314-20261103" },
+
+        { name: "Stock + NoMount — big 1.8 GHz", cat: "nomount", android: ["13"], androidLabel: "Android 13+", variants: ["Stock"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 1.8, tagline: "Kernel 4.19 NoMount · Stabil · harian", desc: NOMOUNT_NOTE, md5: "cd7c4a7b7d5ff78177c037f7ff549820", url: GH_419 + "download/v1.3-419-ksunext-33314-20261017/RSKSevenProject-X00TD-419-Stock-NOMOUNT-33314-20261017.zip", release: GH_419 + "tag/v1.3-419-ksunext-33314-20261017" },
+        { name: "OC + NoMount — big 2.2 GHz", cat: "nomount", android: ["13"], androidLabel: "Android 13+", variants: ["OC"], date: "2026-10-17", dateLabel: "17 Okt 2026", clock: 2.2, tagline: "Kernel 4.19 NoMount · Overclock", desc: NOMOUNT_NOTE, md5: "facf32bd3afb168f3b7c1c3f1b059074", url: GH_419 + "download/v1.3-419-ksunext-33314-20261017/RSKSevenProject-X00TD-419-OC-NOMOUNT-33314-20261017.zip", release: GH_419 + "tag/v1.3-419-ksunext-33314-20261017" },
+
+        {
+          name: "RSKSeven GPU Control", cat: "modul",
+          android: ["10", "11", "12", "13"], androidLabel: "Kernel 4.4 / 4.19", variants: [],
+          date: "2026-11-03", dateLabel: "3 Nov 2026", clock: null,
+          tagline: "Modul KernelSU · Unlock GPU s.d. 750 MHz",
+          desc: "Flash setelah kernel. GPU di atas 430 MHz tergantung unit (silicon lottery); reboot mengembalikan ke default aman.",
+          md5: null,
+          url: GH_419 + "download/v1.4-419-ksunext-33314-20261103/RSKSeven-GPUControl-X00TD-v1.0.zip",
+          release: GH_419 + "tag/v1.4-419-ksunext-33314-20261103"
+        }
+      ];
+
+      var state = { q: "", cat: "all", android: "all", variant: "all", sort: "new", view: "list" };
+
+      var itemsEl = document.getElementById("items");
+      var metaEl = document.getElementById("resultMeta");
+      var emptyEl = document.getElementById("emptyState");
+
+      var DL_ICON = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m6.5 10.5 5.5 5.5 5.5-5.5"/><path d="M4 21h16"/></svg>';
+      var COPY_ICON = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+
+      function esc(s) {
+        return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
+      function md5Html(md5) {
+        if (!md5) return "";
+        return '<div class="md5-box"><div class="md5-label">MD5</div>' +
+          '<div class="md5-row"><span class="md5">' + esc(md5) + '</span>' +
+          '<button type="button" class="copy-btn" data-md5="' + esc(md5) + '" aria-label="Salin MD5">' + COPY_ICON + '<span>Salin</span></button></div></div>';
+      }
+
+      function itemHtml(it) {
+        var badges = '<span class="badge cat">' + esc(CAT_LABEL[it.cat]) + '</span>' +
+          '<span class="badge">' + esc(it.androidLabel) + '</span>';
+        it.variants.forEach(function (v) { badges += '<span class="badge">' + esc(v) + '</span>'; });
+        var meta = '<span>' + esc(it.dateLabel) + '</span>';
+        if (it.size) meta += '<span>Ukuran: ' + esc(it.size) + '</span>';
+        if (it.release) meta += '<span><a href="' + esc(it.release) + '" target="_blank" rel="noopener">Halaman rilis →</a></span>';
+        return '<article class="item">' +
+          '<div class="item-body"><h3>' + esc(it.name) + '</h3>' +
+          '<div class="badges">' + badges + '</div>' +
+          '<p class="desc"><strong>' + esc(it.tagline) + '.</strong> ' + esc(it.desc) + '</p>' +
+          '<div class="meta-line">' + meta + '</div></div>' +
+          '<div class="item-side">' + md5Html(it.md5) +
+          '<a class="dl-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener">' + DL_ICON + 'Download</a></div>' +
+          '</article>';
+      }
+
+      function matches(it) {
+        if (state.cat !== "all" && it.cat !== state.cat) return false;
+        if (state.android !== "all" && it.android.indexOf(state.android) === -1) return false;
+        if (state.variant !== "all") {
+          if (state.variant === "OC") {
+            if (it.variants.indexOf("OC") === -1 && it.variants.indexOf("Extreme") === -1) return false;
+          } else if (it.variants.indexOf(state.variant) === -1) return false;
+        }
+        if (state.q) {
+          var hay = (it.name + " " + CAT_LABEL[it.cat] + " " + it.tagline + " " + it.desc + " " + it.androidLabel + " " + it.variants.join(" ")).toLowerCase();
+          if (hay.indexOf(state.q.toLowerCase()) === -1) return false;
+        }
+        return true;
+      }
+
+      function render() {
+        var list = ITEMS.filter(matches);
+        if (state.sort === "new") list.sort(function (a, b) { return b.date.localeCompare(a.date); });
+        else if (state.sort === "old") list.sort(function (a, b) { return a.date.localeCompare(b.date); });
+        else if (state.sort === "name") list.sort(function (a, b) { return a.name.localeCompare(b.name); });
+        else if (state.sort === "clock") list.sort(function (a, b) { return (b.clock || 0) - (a.clock || 0); });
+
+        itemsEl.className = "items" + (state.view === "grid" ? " grid" : "");
+        itemsEl.innerHTML = list.map(itemHtml).join("");
+        emptyEl.hidden = list.length > 0;
+        metaEl.textContent = "Menampilkan " + list.length + " dari " + ITEMS.length + " build" +
+          (state.cat !== "all" ? " · kategori: " + CAT_LABEL[state.cat] : "") +
+          (state.q ? " · pencarian: \u201c" + state.q + "\u201d" : "");
+      }
+
+      /* Latest release files (Matrix v1.4) */
+      (function () {
+        var box = document.getElementById("latestFiles");
+        var files = ITEMS.filter(function (it) { return it.cat === "matrix"; });
+        files.sort(function (a, b) { return (a.clock || 0) - (b.clock || 0); });
+        box.innerHTML = files.map(function (it) {
+          return '<div class="latest-file"><span class="fname">' + esc(it.name) + '</span>' +
+            '<span class="fmd5">' + md5Html(it.md5) + '</span>' +
+            '<a class="dl-btn" href="' + esc(it.url) + '" target="_blank" rel="noopener">' + DL_ICON + 'Download</a></div>';
+        }).join("");
+      })();
+
+      /* Copy MD5 (event delegation, works for list + latest card) */
+      document.addEventListener("click", function (e) {
+        var btn = e.target.closest ? e.target.closest(".copy-btn") : null;
+        if (!btn) return;
+        var text = btn.getAttribute("data-md5");
+        function done() {
+          btn.classList.add("copied");
+          var label = btn.querySelector("span");
+          var old = label ? label.textContent : "";
+          if (label) label.textContent = "Disalin";
+          setTimeout(function () { btn.classList.remove("copied"); if (label) label.textContent = old; }, 1600);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { fallback(); });
+        } else { fallback(); }
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+          document.body.appendChild(ta); ta.select();
+          try { document.execCommand("copy"); done(); } catch (err) { /* abaikan */ }
+          document.body.removeChild(ta);
+        }
+      });
+
+      /* Controls */
+      document.getElementById("q").addEventListener("input", function (e) { state.q = e.target.value.trim(); render(); });
+      document.getElementById("fAndroid").addEventListener("change", function (e) { state.android = e.target.value; render(); });
+      document.getElementById("fVariant").addEventListener("change", function (e) { state.variant = e.target.value; render(); });
+      document.getElementById("fSort").addEventListener("change", function (e) { state.sort = e.target.value; render(); });
+
+      var chipBtns = Array.prototype.slice.call(document.querySelectorAll("#catChips .chip[data-cat]"));
+      function setCat(cat) {
+        state.cat = cat;
+        chipBtns.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-cat") === cat ? "true" : "false"); });
+        var navLinks = document.querySelectorAll("#mainNav a[data-nav]");
+        navLinks.forEach(function (a) {
+          var n = a.getAttribute("data-nav");
+          a.classList.toggle("active", n === cat || (cat === "all" && n === "home"));
+        });
+        render();
+      }
+      chipBtns.forEach(function (b) {
+        b.addEventListener("click", function () { setCat(b.getAttribute("data-cat")); });
+      });
+
+      document.querySelectorAll("#mainNav a[data-nav]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          var n = a.getAttribute("data-nav");
+          if (n === "home") setCat("all");
+          else if (n === "donasi") { /* biarkan anchor jalan */ }
+          else setCat(n);
+        });
+      });
+
+      document.getElementById("resetFilters").addEventListener("click", function () {
+        state.q = ""; state.android = "all"; state.variant = "all";
+        document.getElementById("q").value = "";
+        document.getElementById("fAndroid").value = "all";
+        document.getElementById("fVariant").value = "all";
+        setCat("all");
+      });
+
+      var viewList = document.getElementById("viewList");
+      var viewGrid = document.getElementById("viewGrid");
+      function setView(v) {
+        state.view = v;
+        viewList.setAttribute("aria-pressed", v === "list" ? "true" : "false");
+        viewGrid.setAttribute("aria-pressed", v === "grid" ? "true" : "false");
+        render();
+      }
+      viewList.addEventListener("click", function () { setView("list"); });
+      viewGrid.addEventListener("click", function () { setView("grid"); });
+
+      /* Theme toggle (in-memory + system preference at load) */
+      var themeBtn = document.getElementById("themeBtn");
+      var iconSun = document.getElementById("themeIconSun");
+      var iconMoon = document.getElementById("themeIconMoon");
+      var themeLabel = themeBtn.querySelector(".theme-label");
+      function applyTheme(t) {
+        document.documentElement.setAttribute("data-theme", t);
+        var dark = t === "dark";
+        iconSun.style.display = dark ? "" : "none";
+        iconMoon.style.display = dark ? "none" : "";
+        if (themeLabel) themeLabel.textContent = dark ? "Tema terang" : "Tema gelap";
+      }
+      applyTheme("dark");
+      themeBtn.addEventListener("click", function () {
+        var cur = document.documentElement.getAttribute("data-theme");
+        applyTheme(cur === "dark" ? "light" : "dark");
+      });
+
+      render();
+    </script>
+  </body>
 </html>
