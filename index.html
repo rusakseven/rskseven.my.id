@@ -354,7 +354,7 @@
           </a>
           <a href="#arsip" data-nav="rom">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg>
-            ROM <span class="count">4</span>
+            ROM <span class="count">5</span>
           </a>
           <a href="#arsip" data-nav="eas">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
@@ -402,8 +402,8 @@
             <h1>ROM &amp; kernel. <em>Untuk Max Pro M1.</em></h1>
             <p class="lede">Semua build RSKSevenProject untuk ASUS Zenfone Max Pro M1 (X00TD) di satu tempat — ROM lengkap, kernel 4.4 dan 4.19, plus modul pendamping. Cari, saring, lalu unduh langsung.</p>
             <div class="hero-stats">
-              <div class="stat"><b>22</b><span>file unduhan</span></div>
-              <div class="stat"><b>4</b><span>ROM lengkap</span></div>
+              <div class="stat"><b>23</b><span>file unduhan</span></div>
+              <div class="stat"><b>5</b><span>ROM lengkap</span></div>
               <div class="stat"><b>17</b><span>varian kernel</span></div>
               <div class="stat"><b>1</b><span>modul KernelSU</span></div>
             </div>
@@ -414,22 +414,22 @@
 
           <div class="section-head">
             <h2>Rilis terbaru</h2>
-            <p>4 November 2026</p>
+            <p>8 November 2026</p>
           </div>
           <section class="latest" aria-label="Rilis terbaru">
             <div class="latest-top">
               <span class="latest-badge">Latest release</span>
-              <span class="latest-date">ROM · Corvus OS A10 Extinction · Android 10 · Unofficial</span>
+              <span class="latest-date">ROM · Corvus OS A11 Vanguard · Android 11 · Unofficial</span>
             </div>
-            <h3>Corvus OS A10 Extinction</h3>
-            <p class="desc">Corvus OS Android 10 “Extinction” (Unofficial, userdebug, testkey) · Kernel bawaan RSKSevenProject 4.4.302 #38 Extreme (prebuilt) · KernelSU-Next 33314 + SuSFS v2.3.0 · CPU big OC sampai 2,46 GHz lewat profil Spectrum (angka penuh khusus unit speedbin0).</p>
+            <h3>Corvus OS A11 Vanguard</h3>
+            <p class="desc">Corvus OS Android 11 “Vanguard” v17.0 (Unofficial) · Kernel bawaan RSKSevenProject 4.4.302 #36 HMP OC LV (prebuilt) · KernelSU-Next 33314 + SuSFS v2.3.0 · CPU big OC sampai 2,2 GHz lewat profil Spectrum Performance &amp; Gaming.</p>
             <div class="latest-files" id="latestFiles"></div>
-            <p class="desc" style="margin-top:14px"><a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/Extinction-A10-20261104-release" target="_blank" rel="noopener">Lihat halaman rilis di GitHub →</a></p>
+            <p class="desc" style="margin-top:14px"><a href="https://github.com/rusakseven/rskseven-rom-x00td/releases/tag/Vanguard-A11-20261108-release" target="_blank" rel="noopener">Lihat halaman rilis di GitHub →</a></p>
           </section>
 
           <div class="section-head" id="arsip">
             <h2>Arsip build</h2>
-            <p>22 build — pilih untuk mengunduh langsung.</p>
+            <p>23 build — pilih untuk mengunduh langsung.</p>
           </div>
 
           <div class="toolbar" role="search">
@@ -535,6 +535,16 @@
       var NOMOUNT_NOTE = "EAS + schedutil · KernelSU-Next v3.4.0-legacy (33314) · SuSFS v2.3.0 · NoMount mengalihkan isi file di VFS tanpa mount — kernel ini menyediakan subsistemnya, install juga metamodule NoMount dari Releases repo NoMount agar aktif.";
 
       var ITEMS = [
+        {
+          name: "Corvus OS A11 Vanguard", cat: "rom",
+          android: ["11"], androidLabel: "Android 11", variants: [],
+          date: "2026-11-08", dateLabel: "8 Nov 2026", clock: 2.2, size: "~916 MB",
+          tagline: "ROM Android 11 · Baru",
+          desc: "Corvus OS v17.0 \u201cVanguard\u201d (Android 11, Unofficial). Kernel bawaan: RSKSevenProject 4.4.302 #36 HMP OC LV (prebuilt) · KernelSU-Next 33314 + SuSFS v2.3.0. CPU cluster besar overclock sampai 2,2 GHz lewat profil Spectrum Performance & Gaming (Balance/Battery tidak berubah). Aplikasi tertanam: Open Camera (menggantikan GoogleCameraGo). Flash test lulus — install dan boot normal, tidak ada masalah. Catatan: security patch yang tampil di Settings (2023-02-05) hanya nilai tampilan; platform sebenarnya 2021-03-05, vendor 2020-12-05.",
+          md5: "d6279cdfd879a6c98e57a6bbf1014d59",
+          url: GH_ROM + "download/Vanguard-A11-20261108-release/Corvus_v17.0-Vanguard-X00TD-08112026-Unofficial-0925.zip",
+          release: GH_ROM + "tag/Vanguard-A11-20261108-release"
+        },
         {
           name: "Corvus OS A10 Extinction", cat: "rom",
           android: ["10"], androidLabel: "Android 10", variants: [],
@@ -676,10 +686,10 @@
           (state.q ? " · pencarian: \u201c" + state.q + "\u201d" : "");
       }
 
-      /* Latest release files (Corvus A10 Extinction) */
+      /* Latest release files (Corvus A11 Vanguard) */
       (function () {
         var box = document.getElementById("latestFiles");
-        var files = ITEMS.filter(function (it) { return it.release === GH_ROM + "tag/Extinction-A10-20261104-release"; });
+        var files = ITEMS.filter(function (it) { return it.release === GH_ROM + "tag/Vanguard-A11-20261108-release"; });
         files.sort(function (a, b) { return (a.clock || 0) - (b.clock || 0); });
         box.innerHTML = files.map(function (it) {
           return '<div class="latest-file"><span class="fname">' + esc(it.name) + '</span>' +
